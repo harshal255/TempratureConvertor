@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temprature Convertor</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <form id="tempcal" onsubmit="calculatetemp(); return false">
+        <!-- return false :- no submit automatic  -->
+
+        <label for="temp" id="title">Please Enter the temprature you want to convert</label>
+        <br>
+        <div class="input">
+            <input type="number" name="temp" id="temp" class="border">
+
+            <select name="temp_diff" id="temp_diff" class="border">
+                <option value="cel">° Celsius</option>
+                <option value="fah">° Fahrenheitt</option>
+            </select>
+
+        </div>
+        <br>
+        <div class="sq">
+            <button id="submit" onclick="calculatetemp()">Get Temprature</button>
+        </div>
+        <div class="output">
+            <span id="result"></span>
+        </div>
+
+
+        <div id="para"> </div>
+
+
+
+
+
+    </form>
+
+
+
+
+
+
+
+    <script src="index.js"></script>
+
+</body>
+
+</html>
