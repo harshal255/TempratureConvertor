@@ -26,14 +26,14 @@ const calculatetemp = () => {
     let result;
     if (valueTemp == 'cel') {
         result = celToFah(numbertemp);
-        document.getElementById('result').innerHTML = `${numbertemp} °Celsius = ${result} °Fahrenheit`
-        document.getElementById('para').innerHTML = `<h2>Fahrenheit (°F)</h2>
-        <p>Fahrenheit unit’s abbreviation is °F. The Fahrenheit scale was first introduced by a Dutchman named Gabriel Fahrenheit in 1724.  The two main reference points of the scale are the freezing point of water being specified as 32°F and the temperature of the human body being 96°F.</p> `
+        document.getElementById('result').innerHTML = ` ${numbertemp} °Celsius = ${result} °Fahrenheit`
+        document.getElementById('para').innerHTML = `<h2 data-aos="zoom-in">Fahrenheit (°F)</h2>
+        <p data-aos="zoom-in">Fahrenheit unit’s abbreviation is °F. The Fahrenheit scale was first introduced by a Dutchman named Gabriel Fahrenheit in 1724.  The two main reference points of the scale are the freezing point of water being specified as 32°F and the temperature of the human body being 96°F.</p> `
     } else {
         result = fahToCel(numbertemp);
         document.getElementById('result').innerHTML = `${numbertemp} °Fahrenheit = ${result} °Celsius`
-        document.getElementById('para').innerHTML = `<h2>Celsius (°C)</h2>
-        <p>Celsius is currently a derived unit for temperature in the SI system, kelvin being the base unit. The abbreviation of Celsius is °C (degree Celsius) and the size of one Celsius degree is the same size as one kelvin. The unit and the actual Celsius scale were first presented by a Swede Anders Celsius in 1742. The two main reference points of the Celsius scale were the freezing point of water (or melting point of ice) being defined as 0 °C and the boiling point of water being 100 °C.</p>`
+        document.getElementById('para').innerHTML = `<h2 data-aos="zoom-in">Celsius (°C)</h2>
+        <p data-aos="zoom-in">Celsius is currently a derived unit for temperature in the SI system, kelvin being the base unit. The abbreviation of Celsius is °C (degree Celsius) and the size of one Celsius degree is the same size as one kelvin. The unit and the actual Celsius scale were first presented by a Swede Anders Celsius in 1742. The two main reference points of the Celsius scale were the freezing point of water (or melting point of ice) being defined as 0 °C and the boiling point of water being 100 °C.</p>`
     }
 
 };
